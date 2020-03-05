@@ -60,14 +60,14 @@ def total_even_pairs(src)
 
       if src[row_index][0].even? && src[row_index][1].even?
 
-       total += src[row_index][0] + src[row_index][1]
+       total += src[row_index][0] + src[row_index][1] / 2
         
       end 
       element_index += 1
    end
    row_index += 1 
  end 
- total / 2
+ total 
 end
 
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
